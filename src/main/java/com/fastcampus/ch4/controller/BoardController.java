@@ -17,6 +17,11 @@ import java.util.*;
 public class BoardController {
     @Autowired
     BoardService boardService;
+    @GetMapping("/raed")
+    public String read(Integer bno){
+        return "board";
+
+    }
 
     @GetMapping("/list")
     public String list(HttpServletRequest request) {
