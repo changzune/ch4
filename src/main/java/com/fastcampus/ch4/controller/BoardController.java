@@ -19,6 +19,12 @@ public class BoardController {
     BoardService boardService;
     @GetMapping("/raed")
     public String read(Integer bno){
+        try {
+          BoardDto boardDto =  boardService.read(bno);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
         return "board";
 
     }
