@@ -27,7 +27,7 @@
             <th>등록일</th>
             <th>조회수</th>
         </tr>
-        <c:forEach var="board" items="${list}">
+        <c:forEach var="boardDto" items="${list}">
         <tr>
             <td>${boardDto.bno}</td>
             <td><a href="<c:url value='/boardDto/read?bno=${board.bno}&page=${page}&pageSize=${pagesize}'/>">${board.title}</a></td>
