@@ -18,9 +18,13 @@ public class BoardController {
     @Autowired
     BoardService boardService;
     @GetMapping("/raed")
-    public String read(Integer bno){
+    public String read(Integer bno, Model m){
         try {
           BoardDto boardDto =  boardService.read(bno);
+          m.addAllAttribute(boardDto);
+          m.addAttribute()
+
+
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
