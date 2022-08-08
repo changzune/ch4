@@ -115,7 +115,7 @@ public class BoardController {
         } catch (Exception e) {
             e.printStackTrace();
             m.addAttribute("msg", "LIST_ERR");//////
-            m.addAttribute("totalCnt", 0);//////
+            m.addAttribute("totalCnt", 0);////////
         }
 
         return "boardList"; // 로그인을 한 상태이면, 게시판 화면으로 이동
