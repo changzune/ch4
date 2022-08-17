@@ -115,7 +115,7 @@ public class BoardController {
         } catch (Exception e) {
             e.printStackTrace();
             m.addAttribute("msg", "LIST_ERR");////////
-            m.addAttribute("totalCnt", 0);////////////
+            m.addAttribute("totalCnt", 0);///////////////
             ///
         }
 
